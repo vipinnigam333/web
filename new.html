@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header>
+        <h1>College Event Management</h1>
+    </header>
+    <main>
+        <section id="event-list">
+            <h2>Upcoming Events</h2>
+            <div id="events-container"></div>
+        </section>
+        <section id="add-event">
+            <h2>Add New Event</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" required>
+                
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" required>
+                
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" required>
+                
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" required>
+                
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" required></textarea>
+                
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+    </main>
+    <script src="new.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Registration Page</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-image: url("regbc3.gif");
+            background-repeat: no-repeat;
+            background-size: 1520px 750px;
+            display: flow;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 0;
+            color: #333;
+        }
+
+        .container{
+            background: linear-gradient(135deg, #8A2BE2,#000000,#8B0000,#006400);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 1rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        input {
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.75rem;
+            background-color: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        button:hover {
+            color: black;
+            background-color: #bbffae;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .input-group input + label {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            font-size: 1rem;
+            color: #a0aec0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            top: -0.5rem;
+            left: 0.5rem;
+            font-size: 0.75rem;
+            color: #667eea;
+            background-color: white;
+            padding: 0 0.25rem;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+        }
+        .popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+
+}
+.open-popup{
+    visibility: visible;
+    top: 0%;
+    transform: translate(-50%,50%) scale(1);
+
+
+}
+body{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup img {
+    width: 100px;
+    background-blend-mode: lighten;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rbga(0, 0, 0, 0.5);
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #5c86d3;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rbga(0, 0, 0, 0.5);
+}
+.popup button:hover {
+    background-color: #6fd649;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <input type="text" id="username" name="username" required placeholder=" ">
+                <label for="username">Username</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" name="password" required placeholder=" ">
+                <label for="password">Password</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder=" ">
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+
+            <button type="submit" onclick="openPopup()">Register</button>
+        </form>
+        <div class="popup" id="popup">
+            <img src="tick.jpg" alt="Tick">
+            <h2>Thank You !</h2>
+            <p>Your Deatails Has Succesfully Sumbited </p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+//        let popup=document.getElementById("popup");
+// function openPopup() {
+//     popup.classList.add("open-popup");
+// }
+// function closePopup() {
+//     popup.classList.remove("open-popup");
+// }
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+    const popup = document.getElementById('popup');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (validateForm()) {
+            openPopup();
+        }
+    });
+
+    function validateForm() {
+        const username = document.getElementById('username').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+
+        if (username === '' || email === '' || password === '' || confirmPassword === '') {
+            alert('Please fill in all fields');
+            return false;
+        }
+
+        if (!isValidEmail(email)) {
+            alert('Please enter a valid email address');
+            return false;
+        }
+
+        if (password.length < 8) {
+            alert('Password must be at least 8 characters long');
+            return false;
+        }
+
+        if (password !== confirmPassword) {
+            alert('Passwords do not match');
+            return false;
+        }
+
+        return true;
+    }
+
+    function isValidEmail(email) {
+        const emailRegex = "sumit.18@gmail.com";
+        popup.classList.add('open-popup');
+        return emailRegex.test(email);
+    }
+
+    function openPopup() {
+        popup.classList.add('open-popup');
+    }
+
+    function closePopup() {
+        popup.classList.remove('open-popup');
+        form.reset();
+    }
+
+    // Expose closePopup function to the global scope
+    window.closePopup = closePopup;
+});
+    </script>
+</body>
+</html>

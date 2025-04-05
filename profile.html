@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profilepage.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header class="profile-header">
+            <a href="yt2.html"><img src="profile.png" alt="Profile Picture" class="profile-picture"></a>
+            <h1 class="profile-name" id="userName">Sumit Saini</h1>
+            <p class="profile-type" id="userType">Participant</p>
+        </header>
+        <div class="profile-body">
+            <div class="info-group">
+                <div class="info-label">Email</div>
+                <p class="info-value" id="userEmail">sumitsaini.12@example.com</p>
+            </div>
+            <div class="info-group" id="studentInfoGroup">
+                <div class="info-label">Student ID</div>
+                <p class="info-value" id="studentId">*******</p>
+            </div>
+            <div class="info-group" id="studentInfoGroup2">
+                <div class="info-label">Event</div>
+                <p class="info-value" id="major">Technical</p>
+            </div>
+            <div class="info-group" id="studentInfoGroup3">
+                <div class="info-label">Year of Study</div>
+                <p class="info-value" id="yearOfStudy">1st Year</p>
+            </div>
+            <div class="info-group" id="adminInfoGroup" style="display: none;">
+                <div class="info-label">Department</div>
+                <p class="info-value" id="department">Mechanical</p>
+            </div>
+            <div class="info-group" id="adminInfoGroup2" style="display: none;">
+                <div class="info-label">Role</div>
+                <p class="info-value" id="role">Manager</p>
+            </div>
+            <a href="#"><button class="edit-button" onclick="editProfile()">Edit Profile</button></a>
+        </div>
+    </div>
+    <script src="profilepage.js"></script>
+</body>
+</html>

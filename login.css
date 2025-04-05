@@ -1,0 +1,146 @@
+ /* General Styles */
+ body {
+    background-image: url("loginbc.gif");
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.login-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Left Section */
+.login-left {
+    flex: 1;
+    background: #121212;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.login-left h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.login-left label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login-left input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333333;
+    color: #ffffff;
+}
+
+.login-left input::placeholder {
+    color: #aaaaaa;
+}
+
+.login-left .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-left .actions label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.login-left .actions label input {
+    margin-right: 5px;
+}
+
+.login-left a {
+    color: #7499cf;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-left a:hover {
+    text-decoration: underline;
+}
+
+.login-left button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #5772ac, #285691);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-left button:hover {
+    background: linear-gradient(90deg, #536fac, #192a49);
+}
+
+/* Right Section */
+.login-right {
+    flex: 1;
+    background: linear-gradient(135deg, #5889d1, #9d95ec);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-right h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-right p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.login-right a {
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-right a:hover {
+    background: #ffffff;
+    color: #ff3333;
+}
+.image{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: wheat;
+}
