@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image:url("eventbc2.gif");
+            background-repeat: no-repeat;
+            background-size: 1500px 800px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            position: relative;
+            width: 320px;
+            height: 400px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 2rem;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .red-card::before {
+            background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), transparent),
+                        url('');
+        }
+
+        .green-card::before {
+            background: linear-gradient(to bottom, rgba(0, 255, 0, 0.3), transparent),
+                        url('');
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .red-card {
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+        }
+
+        .green-card {
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+        }
+
+        .date {
+            position: relative;
+            background: rgba(0, 0, 0, 0.8);
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            z-index: 1;
+        }
+
+        .red-card .date {
+            color: #ff4444;
+        }
+
+        .green-card .date {
+            color: #44ff44;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 2rem;
+            margin: 1rem 0;
+            z-index: 1;
+        }
+
+        p {
+            position: relative;
+            margin: 1rem 0;
+            line-height: 1.5;
+            z-index: 1;
+        }
+
+        .see-more {
+            position: relative;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .red-card .see-more {
+            color: #ff4444;
+        }
+
+        .green-card .see-more {
+            color: #44ff44;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 30px rgba(255, 0, 0, 0.3); }
+            50% { box-shadow: 0 0 50px rgba(255, 0, 0, 0.5); }
+            100% { box-shadow: 0 0 30px rgba(255, 0, 0, 0.3); }
+        }
+
+        .red-card:hover {
+            animation: glow 2s infinite;
+        }
+
+        .green-card:hover {
+            animation: glow-green 2s infinite;
+        }
+
+        @keyframes glow-green {
+            0% { box-shadow: 0 0 30px rgba(0, 255, 0, 0.3); }
+            50% { box-shadow: 0 0 50px rgba(0, 255, 0, 0.5); }
+            100% { box-shadow: 0 0 30px rgba(0, 255, 0, 0.3); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card red-card">
+        <div class="date">AVISKAR</div>
+        <h2>Event Details</h2>
+        <p>It is a Annual Techno-Management Fest Of MNNNIT.</p>
+        <br>
+        <p>An Annual event where students showcase their technical skills and innovative ideas through competitions.</p>
+        <a href="eventdetails.html" class="see-more">SEE MORE</a>
+    </div>
+
+    <div class="card green-card">
+        <div class="date">CULRAV</div>
+        <h2>Event Details</h2>
+        <p>It is a Annual Cultural-Management Fest Of MNNIT!  </p>
+        <br>
+        <p>A celebration of a community's traditional and diversity,usually featuring perfomance like like dance,art exhibitions.</p>
+        <a href="eventdetails.html" class="see-more">SEE MORE</a>
+    </div>
+</body>
+</html>

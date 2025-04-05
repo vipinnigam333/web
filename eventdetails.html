@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Tech Conference 2024</title>
+    <style>
+        hr {
+            height: 5px;
+            color: #000000;
+            background-color: #000000;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #161748;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #8A2BE2,#000000,#8B0000,#006400);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .container {
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+       .container img {
+            width:1150px;
+            height: 700px;
+        }
+
+        .event-banner {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .event-info {
+            background: linear-gradient(135deg, #8A2BE2,#000000,#8B0000,#006400);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: linear-gradient(to bottom, rgba(0, 255, 0, 0.7), transparent);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .schedule {
+            margin: 2rem 0;
+        }
+
+        .schedule-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .time {
+            min-width: 100px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .speakers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .speaker-card {
+           margin: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 470px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .speaker-image {
+            padding-top: 100px;
+            padding-left: 50px;
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .speaker-info1 {
+            padding-left: 100px;
+            width: 450px;
+            display: flex;
+        }
+        .speaker-info2 {
+            padding-left: 270px;
+            width: 450px;
+            display: flow;
+        }
+        .speaker-info3 {
+            padding-left: 200px;
+            width: 450px;
+            display: flow;
+        }
+
+        .register-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .register-button:hover {
+            background: #5a67d8;
+        }
+
+        .highlight {
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .event-banner {
+                height: 200px;
+            }
+
+            .schedule-item {
+                flex-direction: column;
+            }
+
+            .time {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Tech Conference 2024</h1>
+            <p>Join us for the biggest tech event of the year</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <img src="/WhatsApp Image 2025-02-02 at 10.11.37 AM.jpeg" alt="Event Banner" class="event-banner">
+
+        <section class="event-info">
+            <h2>Event Details</h2>
+            <div class="event-grid">
+                <div class="info-card">
+                    <h3>📅 Date & Time</h3>
+                    <p>November 11-18</p>
+                    <p>9:00 AM -9:00 PM</p>
+                </div>
+                <div class="info-card">
+                    <h3>📍 Location</h3>
+                    <ul>
+                       <li>Athletic Ground</li>
+                       <li>MP HALL</li>
+
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="info-card">
+                    <h3>🎯 Focus Areas</h3>
+                    <p>AI & Machine Learning</p>
+                    <p>Web Development</p>
+                    <p>Cloud Computing</p>
+                    <p>Cybersecurity</p>
+                </div>
+            </div>
+
+            <div class="schedule">
+                <h2>Event Schedule</h2>
+                <div class="schedule-item">
+                    <div class="time">9:00 AM</div>
+                    <div class="content">
+                        <h3>Aero Club</h3>
+                       <ul>
+                         <li>Falcon</li>
+                         <li>HoverTrouble</li>
+                         <li>Game of Drones</li>
+                         <li>Hack and Fly</li>
+                </ul>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="time">2:00 PM</div>
+                    <div class="content">
+                        <h3>Robotics Club</h3>
+                        <ul>
+                        <li>Code Sprint</li>
+                        <li>Doodle Bot</li>
+                        <li>Euphoria Drift</li>
+                        <li>Hackify</li>
+                        <li>Path Blaze</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="time">6:00 PM</div>
+                    <div class="content">
+                        <h3>GNO Talks</h3>
+                        <ul>
+                            <li>Ashish Solanki</li>
+                            <li>DR G Satheesh Reddy</li>
+                            <li>Shivendra Pratap Singh  Kanwar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+              <h1>Guest For GNO Talks</h1>
+            <section class="speakers">
+                <div class="speaker-card">
+                     <img src="/ashish.jpeg" alt="Aashish Solanki" class="speaker-image">
+                </div>
+                <div class="speaker-card">
+                    <img src="/dr g.jpeg" width="319px" height="480px"alt="DR G SATHEESH REDDY" class="speaker-image"> 
+                </div>
+                <div class="speaker-card">
+                    <img src="/sivendra.jpeg" alt="Mike Wilson" class="speaker-image"> 
+                </div>
+            </section>
+            <div class="speaker-info1">
+                <span><h3>Aashish Solanki</h3>
+                    <hr>
+                <p>Comadian</p>
+                <hr>
+                <p>Winner Comicstan</p> </span> 
+               <span><div class="speaker-info2">
+                    <h3>DR G Satheesh Reddy</h3>
+                    <hr>
+                    <p>Former Chairman DRDO</p>
+                    <hr>
+                    <p>Scientific Adviser to Raksha Mantri</p>
+                </div>
+                </span>
+                <span><div class="speaker-info3">
+                    <h3>Shivendra Pratap Singh Kanwar</h3>
+                    <hr>
+                    <p>Founder And CEO Team Globel</p>
+                    <hr>
+                    <p>Former Commander</p>
+                </div>
+                </span>
+            </div>
+            
+            
+        </section>
+        
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation when elements come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.info-card, .speaker-card, .schedule-item').forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.5s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="shraddha sharma">
+    <meta name="description" content="home page">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>MNNIT-EVENTS</title>
+    <link rel="stylesheet" href="homepage.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        </head>
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <div class="logo">Tech & Cultural Fest</div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="homepage.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                        <li class="nav-item2"><a href="login.html" class="nav-link2">Login</a></li>
+                    </ul>
+                    <div class="menu-toggle">☰</div>
+                </div>
+            </nav>
+        
+            <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navMenu = document.querySelector('.nav-menu');
+        
+                menuToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+            </script>
+    </header>
+    <main>
+        <div id="Discover" class="page-content">
+            <section class="background">
+                <div class="container">
+                    <h1 class="typing-text">Welcome To MNNIT Events</h1>
+                    <h2 class="typing-text">Your Hub To Memorable Events</h2>
+                </div>
+            </section>
+
+            <section>
+                <div class="detail">
+                <p>Welcome to MNNIT's Event Management Portal!</p>
+                <p>Our mission is to bring all college events under one roof, making it easier for students, faculty, and volunteers to stay updated, get involved, and create memorable experiences.</p>
+                <p>Whether it's a cultural festival, technical workshop, sports event, or social initiative, this platform is your go-to destination for seamless event management. From detailed schedules to real-time updates, we ensure you never miss out on the fun and learning opportunities.</p>
+                </div>
+                <h2 class="typeWriter" data-text="What We Offer"></h2>
+                <ol>
+                    <li>🌟<span class="list-heading">&nbsp;Bringing Campus Events Closer to You:</span>
+                        <br>
+                        Finding and keeping track of college events can be confusing. Our platform ensures you never miss an important event, making participation easier and more organized.</li>
+                    <li>⏳<span class="list-heading">&nbsp;No More Last-Minute Rush</span>
+                        <br>
+                        With event details, schedules, and a countdown timer in one place, you can plan ahead and be fully prepared for any event.</li>
+                    <li>🔗<span class="list-heading">&nbsp;One-Stop Solution for All Users</span>
+                        <br>
+                        Whether you're a student looking to register, a volunteer managing tasks, or an organizer setting up events, our platform simplifies the process for everyone.</li>
+                    <li>📌<span class="list-heading">&nbsp;Making Events More Accessible</span>
+                        <br>
+                        With categorized listings and a user-friendly interface, you can easily browse through all events, find what interests you, and get involved.</li>
+                </ol>
+                <p><strong>Join us in making every event a success and adding to the vibrant spirit of MNNIT!</strong></p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="footer">
+                <p>&copy;2025 <MNNIT-A class="br"></MNNIT-A>All Rights Resserved</p>
+                <p>For any queries or assistance, feel free to reach out through our <a href="#" data-page="contact">Contact Us</a>.</p>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+        <div class="social-container">
+            <!-- Facebook -->
+            <a href="#" class="social-icon facebook">
+                <div class="icon-wrapper">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </a>
+    
+            <!-- X (Twitter) -->
+            <a href="#" class="social-icon twitter">
+                <div class="icon-wrapper">
+                    <img src="x-removebg-preview.png" alt="Twitter">
+                </div>
+            </a>
+    
+            <!-- Instagram -->
+            <a href="#" class="social-icon instagram">
+                <div class="icon-wrapper">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+    
+            <!-- LinkedIn -->
+            <a href="#" class="social-icon linkedin">
+                <div class="icon-wrapper">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </a>
+        </div>     
+
+        
+<!--CONTACT***************************************************************************************************-->
+            <div id="contact" class="page-content" style="display: none;">
+                <article class="contact_background">
+                    <form action="https://httpbin.org/get" method="get">
+                        <fieldset class="contact-container">
+                            <legend>📞</legend>
+                            <section class="contact-form">
+                            <p>
+                                <label for="fullName"></label>
+                                <input type="text" name="fullName" id="fullName" placeholder="👤 Name" required>
+                            </p>
+                            <p>
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="📧 xyz@gmail.com" required>
+                            </p>
+                            <p>
+                                <label for="message"></label>
+                                <br>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="💬 Type Your Message Here" required></textarea>
+                            </p>
+                        </section>
+                        </fieldset>
+                        <p>
+                            <button type="submit" class="submit-btn">SEND</button>
+                        </p>
+                    </form>
+                </article>
+            </div>
+    
+        </div>
+        
+<!-- ****************EVENTS***************** -->
+        <div id="event" class="page-content" style="display: none;">
+            <h1>events</h1>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
